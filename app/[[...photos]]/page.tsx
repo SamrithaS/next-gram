@@ -14,7 +14,7 @@ export default function PhotoPage({ params }: any) {
   return (
     <>
       <Page />
-      {params.photos ? (
+      {params?.photos?.[1] ? (
         <div>
           <a
             className="card"
