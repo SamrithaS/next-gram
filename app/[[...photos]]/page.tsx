@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ClientComponent } from "../../components/_ClientComponent";
 import Page from "../_page";
 
-export default function PhotoPage({ params }) {
+export default function PhotoPage({ params }: any) {
   console.log(params, "params");
 
   // if (!params.photos) {

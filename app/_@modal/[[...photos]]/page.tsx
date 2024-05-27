@@ -1,8 +1,7 @@
 import Link from "next/link";
 import { Modal } from "./modal";
 
-export default function PhotoModal({ params }) {
-  console.log(params.photos);
+export default function PhotoModal({ params }: any) {
   return (
     <>
       {params?.photos?.length ? (
