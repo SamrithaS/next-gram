@@ -1,10 +1,11 @@
-import './global.css';
+import "./global.css";
+import { ClientComponent } from "../components/_ClientComponent";
 
 export const metadata = {
-  title: 'NextGram',
+  title: "NextGram",
   description:
-    'A sample Next.js app showing dynamic routing with modals as a route.',
-  metadataBase: new URL('https://nextgram.vercel.app'),
+    "A sample Next.js app showing dynamic routing with modals as a route.",
+  metadataBase: new URL("https://nextgram.vercel.app"),
 };
 
 export default function RootLayout(props: {
@@ -14,6 +15,7 @@ export default function RootLayout(props: {
   return (
     <html>
       <body>
+        <ClientComponent />
         {props.children}
         {props.modal}
         <div id="modal-root" />
